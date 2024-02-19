@@ -1,14 +1,34 @@
 # Credit-Card-Fraud-Detection
-A Project on classifying credit card transactions being legit or fraudulent
 
-## DATASET CONTENT:
+## Overview
+This project focuses on building a machine learning model to predict credit card fraud. Various models including logistic regression, random forests, and support vector machines (SVM) were employed to achieve this objective. The aim is to develop an accurate and reliable predictive model that can assist in identifying fraudulent transactions and preventing financial losses.
 
-The dataset contains transactions made by credit cards in September 2013 by European cardholders.This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. Features V1, V2, … V28 are the principal components obtained with PCA. The feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount. The feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+## Objective
+The primary objective of this project is to develop a predictive model that accurately identifies instances of credit card fraud. By leveraging machine learning algorithms, we aim to classify transactions as legit transactions and fraudulent transactions in order to enhance fraud detection capabilities and thereby minimising the impact of fraudulent activities on financial transactions.
 
-## Project Goals:
+## Dataset
+The dataset used for this project contains transactions made by credit cards in September 2013 by European cardholders. It consists of features such as transaction amount, time, and various anonymized numerical features obtained through PCA transformation due to privacy concerns. The target variable is a binary indicator representing whether a transaction is fraudulent or not.
 
-* Develop an advanced credit card fraud detection and prevention system capable of analyzing large volumes of transaction data in real-time.
-* Implement robust machine learning algorithms and techniques to accurately identify and flag fraudulent transactions while minimizing false positives and negatives.
-* Evaluate the effectiveness of different machine learning models and sampling techniques to determine the optimal approach for credit card fraud detection and prevention.
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+## Methodology
+* Data Preprocessing: Cleaning the dataset, handling missing values, scaling features, and splitting into training and testing sets.
+* Model Selection: Training logistic regression, random forests (using gridsearch), and SVM models on the training data.
+* Model Evaluation: Assessing model performance using evaluation metrics such as accuracy, precision, recall, and F1-score.
+  
+## Tools and Libraries
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+  
+## Results
+Random Forest Model outperformed others with higher accuracy and F1-score.
+
+## Conclusion
+This project demonstrates the application of machine learning techniques to address the challenge of credit card fraud detection. By leveraging models like logistic regression, random forests, and SVM, a predictive model capable of identifying fraudulent transactions with high accuracy has been developed. Further improvements and optimizations can be explored to enhance the model's performance and reliability in real-world scenarios.
+
 
 
